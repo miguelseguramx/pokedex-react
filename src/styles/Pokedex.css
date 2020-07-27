@@ -4,10 +4,6 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  border-radius: 60px;
-  background: linear-gradient(145deg, #c7072a, #ec0932);
-  box-shadow:  41px 41px 82px #bc0728,
-              -41px -41px 82px #fe0936;
 }
 
 .pokedex:hover .pokedex-right-front,
