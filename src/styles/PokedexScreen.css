@@ -3,7 +3,7 @@
   border-radius: 10px 10px 0 0;
   border: 1px solid black;
   margin: 20px 0;
-  height: 58%;
+  height: 50%;
   padding: .8rem;
 }
 .pokedex-screen {
@@ -41,12 +41,9 @@
 .pokemon-stats{
   grid-area: stats;
 }
+.pokemon-stat{
+  font-size: 0.9rem;
+}
 .stat-name{
   text-transform: capitalize;
-}
-
-@media(min-width: 900px){
-  .pokedex-screen-container{
-    height: 50%;
-  }
 }
