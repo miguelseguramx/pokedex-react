@@ -1,6 +1,7 @@
 :root {
   --red: #dd082f;
-  --green: hsl(109, 99%, 49%);
+  --dark-red: #3b020d;
+  --green: #2ff901;
   --yellow: #ffcc02;
   --sky: #01fbfb;
   --orange: #ffcc02;
@@ -10,7 +11,7 @@
 
 body{
   margin: 0;
-  background-color: hsl(349, 93%, 12%);
+  background-color: var(--dark-red);
 }
 
 h1, h2{

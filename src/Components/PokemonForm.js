@@ -13,7 +13,7 @@ function PokemonForm({ setPokemonId, setLoading, setError }){
     if(pokemon !== ''){
       setError(false)
       setLoading(true)
-      setPokemonId(pokemon)
+      setPokemonId(pokemon.toLowerCase())
       setPokemon('')
       return
     }

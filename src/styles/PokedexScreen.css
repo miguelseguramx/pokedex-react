@@ -16,8 +16,9 @@
 }
 .pokemon-info{
   padding: 0.8rem;
+  flex-grow: 1;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% calc(60% - 0.8rem);
   grid-template-rows: 35px 1fr;
   grid-column-gap: 0.8rem;
   grid-row-gap: 0.8rem;
@@ -35,6 +36,10 @@
   width: 100%;
   transform: scale(1.2);
   align-self: center;
+  grid-area: img;
+}
+.pokemon-stats{
+  grid-area: stats;
 }
 .stat-name{
   text-transform: capitalize;
