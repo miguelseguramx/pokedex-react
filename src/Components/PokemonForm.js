@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../styles/PokemonForm.css'
 
 function PokemonForm({ setPokemonId, setLoading, setError }){
   const [ pokemon, setPokemon ] = useState('')
@@ -13,7 +12,7 @@ function PokemonForm({ setPokemonId, setLoading, setError }){
     if(pokemon !== ''){
       setError(false)
       setLoading(true)
-      setPokemonId(pokemon.toLowerCase())
+      setPokemonId(window.isNaN(parseInt(pokemon)) ? pokemon.toLowerCase() : pokemon)
       setPokemon('')
       return
     }

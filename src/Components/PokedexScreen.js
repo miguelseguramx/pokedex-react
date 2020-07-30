@@ -2,7 +2,6 @@ import React from 'react'
 import Stat from './Stat'
 import LoadingPokemon from '../img/loading.gif'
 import ErrorPokemon from '../img/error.gif'
-import '../styles/PokedexScreen.css'
 
 // En este componente iteraremos a travez de la lista de actividades o similares
 function PokedexScreen({ pokemon, loading, error }){

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PokedexScreen from './PokedexScreen'
 import PokemonForm from './PokemonForm'
-import '../styles/Pokedex.css'
 
 function Pokedex(){
   const [ error, setError ] = useState(false)
@@ -28,7 +27,7 @@ function Pokedex(){
     <div className="pokedex">
       <div className="pokedex-left">
         <div className="pokedex-left-top">
-          <div className="light is-sky is-big" />
+          <div className={`light is-sky is-big ${loading ? 'is-animated' : ''}`}  />
           <div className="light is-red" />
           <div className="light is-yellow" />
           <div className="light is-green" />
